@@ -26,6 +26,8 @@ button {
 	cursor: pointer;
 }
 
+#wrapper { position: relative; }
+
 /* CSS для верхней секции */
 
 .container-top {
@@ -42,9 +44,11 @@ button {
 .content-top {
     max-width: 1024px;
     display: flex;
-    justify-content: flex-start; /* Updated this line */
+    justify-content: flex-start; 
     align-items: center;
     padding: 0;
+    position: relative;
+    
 }
 
 
@@ -52,18 +56,20 @@ button {
 	position: relative;
 }
 
-.content-top img {
-    width: 60%; 
-    height: auto;
-	display: block;
+.image-container{width: 100%; height: 100%; margin-left: 70px;}
+
+
+.image-container img {
+    width: 100%; 
+    height: 90%;
     margin-bottom:-50px;
+
 }
 
 
 .product-introduction {
-    height: 50%;
-    width: 25rem;
-    margin-top: 50px;
+    height: 100%;
+    width: 35rem;
     box-sizing: border-box;
     margin-right: auto; 
 }
@@ -118,25 +124,28 @@ button {
 
 .row-features {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 1.3rem;
-	margin: 0 0 -100px 20px;
+	margin: 0 0 -100px 0;
 	z-index: 1;
 
 }
 
 .col-features {
-	font-size: 88%;
-	display: flex;
-	flex-direction: row-reverse;
-	background-color: white;
-	padding: 2%;
-	width: 180px;
-	height: 70px;
-	border-radius: 20px;
-	-webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
-	box-shadow: 4px 5px 4px -4px #DBDBDB;
+	font-size: 1em;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    flex-direction: row-reverse;
+    background-color: white;
+    padding-left: 2%;
+    padding-top: 1%;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
+    box-shadow: 4px 5px 4px -4px #DBDBDB;
 }
+
+
 
 /* CSS для нижнего контейнера */
 
@@ -169,7 +178,7 @@ button {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	height: 50vh;
+	height: 45vh;
 	gap: 20px;
 }
 
@@ -192,7 +201,7 @@ button {
 }
 
 .info-boxes img {
-	max-width: auto;
+	max-width: 300px;
 	height: auto;
 	border-radius: 30px;
 }
@@ -275,48 +284,6 @@ button {
 
 
 
-
-/* ********* Верстка для телефона ********* */
-@media only screen and (max-width: 880px) {
-    h1 {
-        margin: 0;
-    }
-
-    .container-top {
-        flex-direction: column;
-        align-items: flex-start;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .content-top {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        position: relative;
-    }
-
-    .content-top img {
-        width: 100%; /* Ensure the image takes 100% width */
-        height: auto;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: visible; /* Allow the image to overflow the container */
-    }
-
-    .product-introduction {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .primary-btn {
-        width: 100%;
-    }
-}
-
 /* ********* Верстка для телефона ********* */
 
 @media only screen and (max-width: 880px) {
@@ -328,28 +295,61 @@ button {
     p{
         margin: 0;
     }
-    .container-top {
-        flex-direction: column;
-        align-items: flex-start;
+    h1 {
+        margin: 0;
     }
 
+    p {
+        margin: 0;
+    }
+
+    .container-top {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        position: none;
+        overflow-x:hidden;
+    }
+    .wrap{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
     .content-top {
         width: 100%;
         margin: 0;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
+        
     }
 
     .content-top img {
-        position: relative;
-        width: 100%;
+        width: 600px;
+        margin-top:20px;
+        left: 0; 
+        transition: left 0.8s ease; 
+
+        @media screen and (max-width: 700px) {
+            left: -10%; 
+        }
+        @media screen and (max-width: 600px) {
+            left: -20%; 
+        }
+        @media screen and (max-width: 500px) {
+            left: -35%; 
+        }
+        @media screen and (max-width: 400px) {
+            left: -75%; 
+        }  
     }
+
 
     .product-introduction {
         width: 100%;
-        padding: 20px;
-        margin:0;
+        margin-top: 20px;
+        z-index: 2;
     }
 
     .primary-btn{
@@ -380,7 +380,7 @@ button {
         align-items: flex-start;
         justify-content: space-around;
         flex-direction: column; 
-        width: 40%;
+        width: 45%;
         height: 100px;
     }
 
@@ -455,4 +455,25 @@ button {
 	    -webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
 	    box-shadow: 4px 5px 4px -4px #DBDBDB;
     }
+}
+
+
+@media only screen and (max-width: 582px) {
+    .col-features {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .col-features {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    .col-features {
+        font-size: 12px;
+        width: 40%;
+    }
+    
 }
