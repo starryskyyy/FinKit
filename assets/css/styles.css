@@ -83,7 +83,6 @@ button {
 
 }
 
-
 .product_introduction {
     height: 100%;
     width: 35rem;
@@ -161,7 +160,7 @@ button {
 
 .container_bottom {
 	max-width: 100%;
-	margin: 100px auto;
+	margin: 60px auto;
 	padding: 60px;
 	box-sizing: border-box;
 	justify-content: center;
