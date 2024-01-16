@@ -1,3 +1,5 @@
+/* Глобальные стили */
+
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
@@ -25,8 +27,7 @@ button {
     cursor: pointer;
 }
 
-
-/* CSS для верхнего контейнера */
+/* CSS для верхней секции */
 
 .container-top {
     max-width: 100%;
@@ -60,14 +61,6 @@ button {
     
 }
 
-.kit-style{
-    background-color: white; 
-    padding: 5px 13px 5px 10px; 
-    border-radius: 12px; 
-    margin-left: 5px;
-    color:#0962E8;
-}
-
 .product-introduction {
     height: 50%;
     width: 25rem;
@@ -83,11 +76,19 @@ button {
 
 }
 
-#primary-btn {
+.kit-style{
+    background-color: white; 
+    padding: 5px 13px 5px 10px; 
+    border-radius: 12px; 
+    margin-left: 5px;
+    color:#0962E8;
+}
+
+.primary-btn {
     color: #fff;
     background: #0962E8;
-
     border: 1px solid #007bff;
+    margin-top: 15px;
 }
 
 /* Переключатель языка */
@@ -110,13 +111,13 @@ button {
 .active{
     background-color: white;
     color: #0962E8;
-    padding:2px 5px 2px 5px;
+    padding:5px;
     border-radius: 50%;
 }
 
-/* Блок с 4 боксами между верхним и нижним контейнером */
+/* CSS для блоков о функциях */
 
-.row-between{
+.row-features{
     display: flex;
     justify-content: flex-start;
     gap: 1.3rem; 
@@ -125,7 +126,7 @@ button {
     
 }
 
-.col-between{
+.col-features{
     font-size:88%;
     display: flex;
     flex-direction: row-reverse; 
@@ -161,19 +162,22 @@ button {
     margin-bottom:10%;
     text-align: center; 
 }
+
+/* CSS для ключевых продуктов */
+
 .key-investments {
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    height: 35vh;
+    height: 50vh;
     gap: 20px; /* Adjust the gap value as needed */
 }
 
 .info-boxes {
     display: flex;
     justify-content: space-between;
-    height: 90%;
+    height: 75%;
     background-color: #E9F6FF;
     border-radius: 30px;
     width: 100%;  
@@ -189,34 +193,81 @@ button {
 }
 
 .info-boxes img {
-    max-width: 100%; 
+    max-width: auto; 
     height: auto;
-    display: block;
     border-radius: 30px; 
+}
+
+/* Секция для брокеров и банков */
+
+.for_and_broker_bank{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.for_and_broker_bank h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #29374E;
+    margin-bottom: 1.5rem;
+    text-align: left; 
+}
+
+.row-bottom {
+    display: flex;
+    gap: 1.5rem; 
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top:5%;
+}
+
+.col-bottom {
+    flex: 1 0 calc(50% - 1.5rem); /* Equal-width columns; Wrap after 2 items */
+    box-sizing: border-box;
+    padding: 0.5rem; /* Adjust the padding for each column */
+    max-width: 200px;
 }
 
 /* СSS для иконок */
 
 
+.icon-bottom, .icon-features {
+    width: 3rem;
+    height: 3rem;
+    background-color: #E9F6FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+}
+
+.icon-features{
+    width: 2.5rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+}
 
 .icon-graph, .icon-activity, .icon-filter, .icon-setting {
     color: #0962E8;
     font-size: 18px;
 }
 
-
-.icon-between{
-    width: 2.5rem;
-    height: 1.6rem;
-    margin-left: 1rem;
-    background-color: #E9F6FF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 1rem;
+.icon-user-heart, .icon-user-arrow, .icon-circle {
+    color: #0962E8;
+    font-size: 35px;
 }
 
-.icon {
-    padding: 0; 
+.icon-coins {
+    color: #0962E8;
+    font-size: 45px;
+}
+
+
+/* Верстка для телефона */
+@media screen and (max-width: 880px) {
+    
 }
