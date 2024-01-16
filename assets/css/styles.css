@@ -152,7 +152,7 @@ button {
 .container-bottom {
 	max-width: 100%;
 	margin: 100px auto;
-	padding: 0 60px;
+	padding: 60px;
 	box-sizing: border-box;
 	justify-content: center;
 	display: flex;
@@ -228,16 +228,14 @@ button {
 	display: flex;
 	gap: 1.5rem;
 	flex-wrap: wrap;
-	margin-left: 5%;
+	margin-left: 10%;
 	margin-top: 5%;
 }
 
 .col-bottom {
 	flex: 1 0 calc(50% - 1.5rem);
-	/* Equal-width columns; Wrap after 2 items */
 	box-sizing: border-box;
 	padding: 0.5rem;
-	/* Adjust the padding for each column */
 	max-width: 200px;
 }
 
@@ -370,9 +368,9 @@ button {
 
     .row-features {
         flex-wrap: wrap;
-        overflow: visible; 
         margin-top: 30px;
         margin-bottom: 30px;
+        justify-content: space-between;
     }
 
     .col-features {
@@ -383,39 +381,27 @@ button {
         width: 45%;
         height: 100px;
     }
-
-    .icon-features {
-        width: 1.5rem;
-	    height: 1.6rem;
-        padding: 5px;
-        position: absolute;
-        left: 0; 
-        top: -0.5rem; 
-        z-index: 2; 
-        margin-right: 10px;
-    }
-
     .col-features p {
         margin-top: 5px;
-    }
+    } 
 
     .container-bottom{
-        padding: 0 10px;
         margin: 20px 0 20px 0;
     }
 
     .content-bottom h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: 550;
     }
 
     .key-investments {
         display: block;
         width:100%; 
+        height: auto;
     }
 
     .info-boxes {
-        height: 50%;
+        height: 200px;
         background-color: #E9F6FF;
         border-radius: 30px;
         width: 100%;
@@ -424,36 +410,71 @@ button {
 
     .for_and_broker_bank {
         display: block;
-        justify-content: space-between;
-        text-align: center;
+        width: 100%; 
         margin-top: 30px;
+        text-align: center;
     }
 
+
     .for_and_broker_bank h2{
-        font-size: 2rem;
-        font-weight: 550;
         text-align: center;
+    }
+
+    .box{
+        padding-top:30px;
+        font-size: 1.2rem;
+    }
+
+    .box :last-child {
+        margin-top: 10px;
+        font-size: 80%;
     }
 
     .row-bottom {
-        flex-wrap: wrap;
-        overflow: visible; 
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: left;
-        margin: 25px 0 0 0;
+        margin: 20px 0;
+        justify-content: space-around;
     }
     
     .col-bottom {
-        position: relative;
-        align-items: flex-start;
-        justify-content: space-around;
-        flex-direction: column; 
-        width: 100%;
-        height: 100px;
+        align-items: flex-start;       
+        flex-direction: column;
+        max-width: 40%; 
+        height: 150px;
         border-radius: 20px;
 	    -webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
 	    box-shadow: 4px 5px 4px -4px #DBDBDB;
+    }
+
+    .col-bottom p {
+        margin-top: 20px;
+    }
+
+    .icon-bottom {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+}
+    .icon-features {
+        width: 1.5rem;
+        height: 1.6rem;
+        padding: 5px;
+        position: absolute;
+        left: 0; 
+        top: -0.5rem; 
+        z-index: 2; 
+        margin-right: 10px;
+    }
+
+    .icon-user-heart,
+    .icon-user-arrow,
+    .icon-circle {
+        color: #0962E8;
+        font-size: 25px;
+    }
+
+    .icon-coins {
+        color: #0962E8;
+        font-size: 35px;
     }
 }
 
@@ -462,18 +483,57 @@ button {
     .col-features {
         font-size: 15px;
     }
+
+    .col-bottom {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 498px) {
     .col-features {
         font-size: 13px;
     }
+
+    .col-bottom {
+        font-size: 12px;
+    }
 }
 
-@media only screen and (max-width: 456px) {
+@media only screen and (max-width: 466px) {
     .col-features {
         font-size: 12px;
-        width: 40%;
+        width: 43%;
+    }
+    .info-boxes {
+        height: 150px;
+        width: 100%;
     }
     
+}
+
+@media only screen and (max-width: 395px) {
+    .col-features {
+        font-size: 13px;
+    }
+    .container-top, .container-bottom {
+        padding: 10px; 
+    } 
+}
+
+
+@media only screen and (max-width: 370px) {
+    .container-top, .container-bottom {
+        padding: 10px; 
+    } 
+
+    .box{
+        padding-top:30px;
+        font-size: 15px;
+    }
+
+    .box :last-child {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
 }
