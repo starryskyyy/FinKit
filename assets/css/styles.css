@@ -31,12 +31,11 @@ button {
 .container-top {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 2rem;
     box-sizing: border-box;
     background-color: #CBECFF;
     justify-content: center;
     display: flex;
-
 }
 
 .content-top {
@@ -44,10 +43,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding: 5rem 0;
-    position: relative; 
+    padding: 0;
     margin-left:50px;
+    margin-bottom: -50px;
+}
 
+.container-top :last-child {
+    position: relative;
 }
 
 .content-top  img {
@@ -55,6 +57,15 @@ button {
     height: auto;
     display: block;
     padding-left: 50px;
+    
+}
+
+.kit-style{
+    background-color: white; 
+    padding: 5px 13px 5px 10px; 
+    border-radius: 12px; 
+    margin-left: 5px;
+    color:#0962E8;
 }
 
 .product-introduction {
@@ -62,6 +73,14 @@ button {
     width: 25rem;
     margin-top: 50px;
     box-sizing: border-box;
+}
+
+.product-introduction p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #29374E;
+    margin-bottom: 1.5rem;
+
 }
 
 #primary-btn {
@@ -102,6 +121,8 @@ button {
     justify-content: flex-start;
     gap: 1.3rem; 
     margin: 0 0 -50px 20px;
+    z-index: 1;
+    
 }
 
 .col-between{
@@ -117,10 +138,62 @@ button {
     box-shadow: 4px 5px 4px -4px #DBDBDB;   
 }
 
-
-
 /* CSS для нижнего контейнера */
 
+.container-bottom {
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+}
+
+.content-bottom {
+    max-width: 1024px;   
+}
+
+.content-bottom h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #29374E;
+    margin-bottom:10%;
+    text-align: center; 
+}
+.key-investments {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    gap: 20px; /* Adjust the gap value as needed */
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    background-color: #E9F6FF;
+    border-radius: 30px;
+    width: 100%;  
+    box-sizing: border-box; 
+}
+
+.box {
+    padding: 15px;
+}
+
+.box :last-child {
+    font-size: 85%;
+}
+
+.info-boxes img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 30px; 
+}
 
 /* СSS для иконок */
 
@@ -142,7 +215,6 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-right: 1rem;
-  
 }
 
 .icon {
