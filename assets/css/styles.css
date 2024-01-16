@@ -1,5 +1,4 @@
 /* Глобальные стили */
-
 body {
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
@@ -9,7 +8,7 @@ body {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 2.5rem; 
 	font-weight: 700;
 	line-height: 1.2;
 	color: #29374E;
@@ -32,48 +31,48 @@ button {
 .container-top {
 	max-width: 100%;
 	margin: 0 auto;
-	padding-top: 2rem;
+    padding: 60px;
 	box-sizing: border-box;
 	background-color: #CBECFF;
 	justify-content: center;
 	display: flex;
+    position: relative;
 }
 
 .content-top {
-	max-width: 1024px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	margin-left: 50px;
-	margin-bottom: -50px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: flex-start; /* Updated this line */
+    align-items: center;
+    padding: 0;
 }
+
 
 .container-top :last-child {
 	position: relative;
 }
 
 .content-top img {
-	max-width: 100%;
-	height: auto;
+    width: 60%; 
+    height: auto;
 	display: block;
-	padding-left: 50px;
-
+    margin-bottom:-50px;
 }
+
 
 .product-introduction {
-	height: 50%;
-	width: 25rem;
-	margin-top: 50px;
-	box-sizing: border-box;
+    height: 50%;
+    width: 25rem;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin-right: auto; 
 }
+
 
 .product-introduction p {
 	font-size: 1.4rem;
 	line-height: 1.5;
 	color: #29374E;
-	margin-bottom: 1.5rem;
-
 }
 
 .kit-style {
@@ -121,7 +120,7 @@ button {
 	display: flex;
 	justify-content: flex-start;
 	gap: 1.3rem;
-	margin: 0 0 -50px 20px;
+	margin: 0 0 -100px 20px;
 	z-index: 1;
 
 }
@@ -172,7 +171,6 @@ button {
 	justify-content: center;
 	height: 50vh;
 	gap: 20px;
-	/* Adjust the gap value as needed */
 }
 
 .info-boxes {
@@ -276,5 +274,185 @@ button {
 }
 
 
-/* Верстка для телефона */
-@media screen and (max-width: 880px) {}
+
+
+/* ********* Верстка для телефона ********* */
+@media only screen and (max-width: 880px) {
+    h1 {
+        margin: 0;
+    }
+
+    .container-top {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .content-top {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .content-top img {
+        width: 100%; /* Ensure the image takes 100% width */
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: visible; /* Allow the image to overflow the container */
+    }
+
+    .product-introduction {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .primary-btn {
+        width: 100%;
+    }
+}
+
+/* ********* Верстка для телефона ********* */
+
+@media only screen and (max-width: 880px) {
+
+    h1{
+        margin: 0;
+    }
+    
+    p{
+        margin: 0;
+    }
+    .container-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-top {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .content-top img {
+        position: relative;
+        width: 100%;
+    }
+
+    .product-introduction {
+        width: 100%;
+        padding: 20px;
+        margin:0;
+    }
+
+    .primary-btn{
+        width: 100%;
+    }
+
+    .language-switch {
+        z-index: 2;
+    }
+
+    .language-btn {
+        z-index: 3;
+    }
+
+    .active {
+        z-index: 4;
+    }
+
+    .row-features {
+        flex-wrap: wrap;
+        overflow: visible; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .col-features {
+        position: relative;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column; 
+        width: 40%;
+        height: 100px;
+    }
+
+    .icon-features {
+        width: 1.5rem;
+	    height: 1.6rem;
+        padding: 5px;
+        position: absolute;
+        left: 0; 
+        top: -0.5rem; 
+        z-index: 2; 
+        margin-right: 10px;
+    }
+
+    .col-features p {
+        margin-top: 5px;
+    }
+
+    .container-bottom{
+        padding: 0 10px;
+        margin: 20px 0 20px 0;
+    }
+
+    .content-bottom h2 {
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+
+    .key-investments {
+        display: block;
+        width:100%; 
+    }
+
+    .info-boxes {
+        height: 50%;
+        background-color: #E9F6FF;
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .for_and_broker_bank {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .for_and_broker_bank h2{
+        font-size: 2rem;
+        font-weight: 550;
+        text-align: center;
+    }
+
+    .row-bottom {
+        flex-wrap: wrap;
+        overflow: visible; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+        margin: 25px 0 0 0;
+    }
+    
+    .col-bottom {
+        position: relative;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column; 
+        width: 100%;
+        height: 100px;
+        border-radius: 20px;
+	    -webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
+	    box-shadow: 4px 5px 4px -4px #DBDBDB;
+    }
+}
