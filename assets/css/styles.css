@@ -5,3 +5,92 @@ body {
     background-color: #f8f9fa;
     color: #29374E;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #29374E;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    padding: 0.70rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 0.50rem;
+    cursor: pointer;
+}
+
+
+/* CSS для верхнего контейнера */
+
+.container-top {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #CBECFF;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.content-top {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5rem 0;
+    position: relative; 
+}
+
+.content-top  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 50px;
+}
+
+.product-introduction {
+    height: 50%;
+    width: 25rem;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#primary-btn {
+    color: #fff;
+    background: #0962E8;
+
+    border: 1px solid #007bff;
+}
+
+/* Переключатель языка */
+
+.language-switch {
+    position: absolute;
+    right: 0; 
+    top: 0; 
+}
+
+.language-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color:#29374E;
+    padding:10px;
+    font-weight: 400;
+}
+
+.active{
+    background-color: white;
+    color: #0962E8;
+    padding:2px 5px 2px 5px;
+    border-radius: 50%;
+}
+
+/* CSS для нижнего контейнера */
