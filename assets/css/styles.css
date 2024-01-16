@@ -36,7 +36,7 @@ button {
     background-color: #CBECFF;
     justify-content: center;
     display: flex;
-    position: relative;
+
 }
 
 .content-top {
@@ -46,6 +46,7 @@ button {
     align-items: center; 
     padding: 5rem 0;
     position: relative; 
+    margin-left:50px;
 }
 
 .content-top  img {
@@ -93,4 +94,28 @@ button {
     border-radius: 50%;
 }
 
+/* Блок с 4 боксами между верхним и нижним контейнером */
+
+.row-between{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem; 
+    margin-bottom: -50px;
+    margin-left:50px;
+}
+
+.col-between{
+    font-size:88%;
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color: white;
+    padding: 2%;
+    width: 150px;
+    height: 70px;
+}
+
+
+
 /* CSS для нижнего контейнера */
+
+
