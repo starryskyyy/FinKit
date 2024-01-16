@@ -1,273 +1,280 @@
 /* Глобальные стили */
 
 body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #29374E;
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+	color: #29374E;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #29374E;
-    margin-bottom: 1.5rem;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #29374E;
+	margin-bottom: 1.5rem;
 }
 
 button {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    user-select: none;
-    padding: 0.70rem 1.8rem;
-    font-size: 1rem;
-    border-radius: 0.50rem;
-    cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none;
+	padding: 0.70rem 1.8rem;
+	font-size: 1rem;
+	border-radius: 0.50rem;
+	cursor: pointer;
 }
 
 /* CSS для верхней секции */
 
 .container-top {
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    box-sizing: border-box;
-    background-color: #CBECFF;
-    justify-content: center;
-    display: flex;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	box-sizing: border-box;
+	background-color: #CBECFF;
+	justify-content: center;
+	display: flex;
 }
 
 .content-top {
-    max-width: 1024px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 0;
-    margin-left:50px;
-    margin-bottom: -50px;
+	max-width: 1024px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin-left: 50px;
+	margin-bottom: -50px;
 }
 
 .container-top :last-child {
-    position: relative;
+	position: relative;
 }
 
-.content-top  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    padding-left: 50px;
-    
+.content-top img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	padding-left: 50px;
+
 }
 
 .product-introduction {
-    height: 50%;
-    width: 25rem;
-    margin-top: 50px;
-    box-sizing: border-box;
+	height: 50%;
+	width: 25rem;
+	margin-top: 50px;
+	box-sizing: border-box;
 }
 
-.product-introduction p{
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #29374E;
-    margin-bottom: 1.5rem;
+.product-introduction p {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	color: #29374E;
+	margin-bottom: 1.5rem;
 
 }
 
-.kit-style{
-    background-color: white; 
-    padding: 5px 13px 5px 10px; 
-    border-radius: 12px; 
-    margin-left: 5px;
-    color:#0962E8;
+.kit-style {
+	background-color: white;
+	padding: 5px 13px 5px 10px;
+	border-radius: 12px;
+	margin-left: 5px;
+	color: #0962E8;
 }
 
 .primary-btn {
-    color: #fff;
-    background: #0962E8;
-    border: 1px solid #007bff;
-    margin-top: 15px;
+	color: #fff;
+	background: #0962E8;
+	border: 1px solid #007bff;
+	margin-top: 15px;
 }
 
 /* Переключатель языка */
 
 .language-switch {
-    position: absolute;
-    right: 0; 
-    top: 0; 
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .language-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color:#29374E;
-    padding:10px;
-    font-weight: 400;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: #29374E;
+	padding: 10px;
+	font-weight: 400;
 }
 
-.active{
-    background-color: white;
-    color: #0962E8;
-    padding:5px;
-    border-radius: 50%;
+.active {
+	background-color: white;
+	color: #0962E8;
+	padding: 5px;
+	border-radius: 50%;
 }
 
 /* CSS для блоков о функциях */
 
-.row-features{
-    display: flex;
-    justify-content: flex-start;
-    gap: 1.3rem; 
-    margin: 0 0 -50px 20px;
-    z-index: 1;
-    
+.row-features {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1.3rem;
+	margin: 0 0 -50px 20px;
+	z-index: 1;
+
 }
 
-.col-features{
-    font-size:88%;
-    display: flex;
-    flex-direction: row-reverse; 
-    background-color: white;
-    padding: 2%;
-    width: 180px;
-    height: 70px;
-    border-radius: 20px;
-    -webkit-box-shadow: 4px 5px 4px -4px #DBDBDB; 
-    box-shadow: 4px 5px 4px -4px #DBDBDB;   
+.col-features {
+	font-size: 88%;
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: white;
+	padding: 2%;
+	width: 180px;
+	height: 70px;
+	border-radius: 20px;
+	-webkit-box-shadow: 4px 5px 4px -4px #DBDBDB;
+	box-shadow: 4px 5px 4px -4px #DBDBDB;
 }
 
 /* CSS для нижнего контейнера */
 
 .container-bottom {
-    max-width: 100%;
-    margin: 100px auto;
-    padding: 0 60px;
-    box-sizing: border-box;
-    justify-content: center;
-    display: flex;
+	max-width: 100%;
+	margin: 100px auto;
+	padding: 0 60px;
+	box-sizing: border-box;
+	justify-content: center;
+	display: flex;
 }
 
 .content-bottom {
-    max-width: 1024px;   
+	max-width: 1024px;
 }
 
 .content-bottom h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #29374E;
-    margin-bottom:10%;
-    text-align: center; 
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #29374E;
+	margin-bottom: 10%;
+	text-align: center;
 }
 
 /* CSS для ключевых продуктов */
 
 .key-investments {
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    height: 50vh;
-    gap: 20px; /* Adjust the gap value as needed */
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 50vh;
+	gap: 20px;
+	/* Adjust the gap value as needed */
 }
 
 .info-boxes {
-    display: flex;
-    justify-content: space-between;
-    height: 75%;
-    background-color: #E9F6FF;
-    border-radius: 30px;
-    width: 100%;  
-    box-sizing: border-box; 
+	display: flex;
+	justify-content: space-between;
+	height: 75%;
+	background-color: #E9F6FF;
+	border-radius: 30px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .box {
-    padding: 15px;
+	padding: 15px;
 }
 
 .box :last-child {
-    font-size: 85%;
+	font-size: 85%;
 }
 
 .info-boxes img {
-    max-width: auto; 
-    height: auto;
-    border-radius: 30px; 
+	max-width: auto;
+	height: auto;
+	border-radius: 30px;
 }
 
 /* Секция для брокеров и банков */
 
-.for_and_broker_bank{
-    max-width: 1024px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+.for_and_broker_bank {
+	max-width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
 }
 
 .for_and_broker_bank h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #29374E;
-    margin-bottom: 1.5rem;
-    text-align: left; 
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #29374E;
+	margin-bottom: 1.5rem;
+	text-align: left;
 }
 
 .row-bottom {
-    display: flex;
-    gap: 1.5rem; 
-    flex-wrap: wrap;
-    margin-left: 5%;
-    margin-top:5%;
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	margin-left: 5%;
+	margin-top: 5%;
 }
 
 .col-bottom {
-    flex: 1 0 calc(50% - 1.5rem); /* Equal-width columns; Wrap after 2 items */
-    box-sizing: border-box;
-    padding: 0.5rem; /* Adjust the padding for each column */
-    max-width: 200px;
+	flex: 1 0 calc(50% - 1.5rem);
+	/* Equal-width columns; Wrap after 2 items */
+	box-sizing: border-box;
+	padding: 0.5rem;
+	/* Adjust the padding for each column */
+	max-width: 200px;
 }
 
 /* СSS для иконок */
 
 
-.icon-bottom, .icon-features {
-    width: 3rem;
-    height: 3rem;
-    background-color: #E9F6FF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 0.5rem;
+.icon-bottom,
+.icon-features {
+	width: 3rem;
+	height: 3rem;
+	background-color: #E9F6FF;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 0.5rem;
 }
 
-.icon-features{
-    width: 2.5rem;
-    height: 1.6rem;
-    margin-left: 1rem;
+.icon-features {
+	width: 2.5rem;
+	height: 1.6rem;
+	margin-left: 1rem;
 }
 
-.icon-graph, .icon-activity, .icon-filter, .icon-setting {
-    color: #0962E8;
-    font-size: 18px;
+.icon-graph,
+.icon-activity,
+.icon-filter,
+.icon-setting {
+	color: #0962E8;
+	font-size: 18px;
 }
 
-.icon-user-heart, .icon-user-arrow, .icon-circle {
-    color: #0962E8;
-    font-size: 35px;
+.icon-user-heart,
+.icon-user-arrow,
+.icon-circle {
+	color: #0962E8;
+	font-size: 35px;
 }
 
 .icon-coins {
-    color: #0962E8;
-    font-size: 45px;
+	color: #0962E8;
+	font-size: 45px;
 }
 
 
 /* Верстка для телефона */
-@media screen and (max-width: 880px) {
-    
-}
+@media screen and (max-width: 880px) {}
