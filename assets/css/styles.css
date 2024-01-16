@@ -30,7 +30,7 @@ button {
 
 /* CSS для верхней секции */
 
-.container-top {
+.container_top {
 	max-width: 100%;
 	margin: 0 auto;
     padding: 60px;
@@ -41,7 +41,7 @@ button {
     position: relative;
 }
 
-.content-top {
+.content_top {
     max-width: 1024px;
     display: flex;
     justify-content: flex-start; 
@@ -52,14 +52,14 @@ button {
 }
 
 
-.container-top :last-child {
+.container_top :last-child {
 	position: relative;
 }
 
-.image-container{width: 100%; height: 100%; margin-left: 70px;}
+.image_container{width: 100%; height: 100%; margin-left: 70px;}
 
 
-.image-container img {
+.image_container img {
     width: 100%; 
     height: 90%;
     margin-bottom:-50px;
@@ -67,7 +67,7 @@ button {
 }
 
 
-.product-introduction {
+.product_introduction {
     height: 100%;
     width: 35rem;
     box-sizing: border-box;
@@ -75,13 +75,13 @@ button {
 }
 
 
-.product-introduction p {
+.product_introduction p {
 	font-size: 1.4rem;
 	line-height: 1.5;
 	color: #29374E;
 }
 
-.kit-style {
+.kit_style {
 	background-color: white;
 	padding: 5px 13px 5px 10px;
 	border-radius: 12px;
@@ -89,7 +89,7 @@ button {
 	color: #0962E8;
 }
 
-.primary-btn {
+.primary_btn {
 	color: #fff;
 	background: #0962E8;
 	border: 1px solid #007bff;
@@ -98,13 +98,13 @@ button {
 
 /* Переключатель языка */
 
-.language-switch {
+.language_switch {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-.language-btn {
+.language_btn {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -122,7 +122,7 @@ button {
 
 /* CSS для блоков о функциях */
 
-.row-features {
+.row_features {
 	display: flex;
 	justify-content: center;
 	gap: 1.3rem;
@@ -131,7 +131,7 @@ button {
 
 }
 
-.col-features {
+.col_features {
 	font-size: 1em;
     display: flex;
     width: 200px;
@@ -149,7 +149,7 @@ button {
 
 /* CSS для нижнего контейнера */
 
-.container-bottom {
+.container_bottom {
 	max-width: 100%;
 	margin: 100px auto;
 	padding: 60px;
@@ -158,11 +158,11 @@ button {
 	display: flex;
 }
 
-.content-bottom {
+.content_bottom {
 	max-width: 1024px;
 }
 
-.content-bottom h2 {
+.content_bottom h2 {
 	font-size: 2.5rem;
 	font-weight: 500;
 	line-height: 1.2;
@@ -173,7 +173,7 @@ button {
 
 /* CSS для ключевых продуктов */
 
-.key-investments {
+.key_investments {
 	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
@@ -182,7 +182,7 @@ button {
 	gap: 20px;
 }
 
-.info-boxes {
+.info_boxes {
 	display: flex;
 	justify-content: space-between;
 	height: 75%;
@@ -200,7 +200,7 @@ button {
 	font-size: 85%;
 }
 
-.info-boxes img {
+.info_boxes img {
 	max-width: 300px;
 	height: auto;
 	border-radius: 30px;
@@ -224,7 +224,7 @@ button {
 	text-align: left;
 }
 
-.row-bottom {
+.row_bottom {
 	display: flex;
 	gap: 1.5rem;
 	flex-wrap: wrap;
@@ -232,7 +232,7 @@ button {
 	margin-top: 5%;
 }
 
-.col-bottom {
+.col_bottom {
 	flex: 1 0 calc(50% - 1.5rem);
 	box-sizing: border-box;
 	padding: 0.5rem;
@@ -242,8 +242,8 @@ button {
 /* СSS для иконок */
 
 
-.icon-bottom,
-.icon-features {
+.icon_bottom,
+.icon_features {
 	width: 3rem;
 	height: 3rem;
 	background-color: #E9F6FF;
@@ -254,7 +254,7 @@ button {
 	margin-right: 0.5rem;
 }
 
-.icon-features {
+.icon_features {
 	width: 2.5rem;
 	height: 1.6rem;
 	margin-left: 1rem;
@@ -301,7 +301,7 @@ button {
         margin: 0;
     }
 
-    .container-top {
+    .container_top {
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -313,7 +313,7 @@ button {
         width: 100%;
         position: absolute;
     }
-    .content-top {
+    .content_top {
         width: 100%;
         margin: 0;
         display: flex;
@@ -323,7 +323,7 @@ button {
         
     }
 
-    .content-top img {
+    .content_top img {
         width: 600px;
         margin-top:20px;
         left: 0; 
@@ -339,26 +339,29 @@ button {
             left: -35%; 
         }
         @media screen and (max-width: 400px) {
-            left: -75%; 
+            left: -45%; 
+        }  
+        @media screen and (max-width: 300px) {
+            left: -65%; 
         }  
     }
 
 
-    .product-introduction {
+    .product_introduction {
         width: 100%;
         margin-top: 20px;
         z-index: 2;
     }
 
-    .primary-btn{
+    .primary_btn{
         width: 100%;
     }
 
-    .language-switch {
+    .language_switch {
         z-index: 2;
     }
 
-    .language-btn {
+    .language_btn {
         z-index: 3;
     }
 
@@ -366,14 +369,14 @@ button {
         z-index: 4;
     }
 
-    .row-features {
+    .row_features {
         flex-wrap: wrap;
         margin-top: 30px;
         margin-bottom: 30px;
         justify-content: space-between;
     }
 
-    .col-features {
+    .col_features {
         position: relative;
         align-items: flex-start;
         justify-content: space-around;
@@ -381,26 +384,26 @@ button {
         width: 45%;
         height: 100px;
     }
-    .col-features p {
+    .col_features p {
         margin-top: 5px;
     } 
 
-    .container-bottom{
+    .container_bottom{
         margin: 20px 0 20px 0;
     }
 
-    .content-bottom h2 {
+    .content_bottom h2 {
         font-size: 1.7rem;
         font-weight: 550;
     }
 
-    .key-investments {
+    .key_investments {
         display: block;
         width:100%; 
         height: auto;
     }
 
-    .info-boxes {
+    .info_boxes {
         height: 200px;
         background-color: #E9F6FF;
         border-radius: 30px;
@@ -430,12 +433,12 @@ button {
         font-size: 80%;
     }
 
-    .row-bottom {
+    .row_bottom {
         margin: 20px 0;
         justify-content: space-around;
     }
     
-    .col-bottom {
+    .col_bottom {
         align-items: flex-start;       
         flex-direction: column;
         max-width: 40%; 
@@ -445,16 +448,16 @@ button {
 	    box-shadow: 4px 5px 4px -4px #DBDBDB;
     }
 
-    .col-bottom p {
+    .col_bottom p {
         margin-top: 20px;
     }
 
-    .icon-bottom {
+    .icon_bottom {
         width: 2rem;
         height: 2rem;
         margin-right: 0.5rem;
 }
-    .icon-features {
+    .icon_features {
         width: 1.5rem;
         height: 1.6rem;
         padding: 5px;
@@ -480,31 +483,31 @@ button {
 
 
 @media only screen and (max-width: 582px) {
-    .col-features {
+    .col_features {
         font-size: 15px;
     }
 
-    .col-bottom {
+    .col_bottom {
         font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 498px) {
-    .col-features {
+    .col_features {
         font-size: 13px;
     }
 
-    .col-bottom {
+    .col_bottom {
         font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 466px) {
-    .col-features {
+    .col_features {
         font-size: 12px;
         width: 43%;
     }
-    .info-boxes {
+    .info_boxes {
         height: 150px;
         width: 100%;
     }
@@ -512,17 +515,17 @@ button {
 }
 
 @media only screen and (max-width: 395px) {
-    .col-features {
+    .col_features {
         font-size: 13px;
     }
-    .container-top, .container-bottom {
+    .container_top, .container_bottom {
         padding: 10px; 
     } 
 }
 
 
 @media only screen and (max-width: 370px) {
-    .container-top, .container-bottom {
+    .container_top, .container_bottom {
         padding: 10px; 
     } 
 
