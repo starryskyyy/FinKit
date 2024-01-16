@@ -47,6 +47,7 @@ button {
     padding: 5rem 0;
     position: relative; 
     margin-left:50px;
+
 }
 
 .content-top  img {
@@ -99,9 +100,8 @@ button {
 .row-between{
     display: flex;
     justify-content: flex-start;
-    gap: 2rem; 
-    margin-bottom: -50px;
-    margin-left:50px;
+    gap: 1.3rem; 
+    margin: 0 0 -50px 20px;
 }
 
 .col-between{
@@ -110,8 +110,11 @@ button {
     flex-direction: row-reverse; 
     background-color: white;
     padding: 2%;
-    width: 150px;
+    width: 180px;
     height: 70px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 5px -4px #949494; 
+    box-shadow: 1px 2px 5px -4px #949494;
 }
 
 
@@ -119,3 +122,29 @@ button {
 /* CSS для нижнего контейнера */
 
 
+/* СSS для иконок */
+
+
+
+.icon-graph, .icon-activity, .icon-filter, .icon-setting {
+    color: #0962E8;
+    font-size: 18px;
+}
+
+
+.icon-between{
+    width: 2.5rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+    background-color: #E9F6FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+  
+}
+
+.icon {
+    padding: 0; 
+}
