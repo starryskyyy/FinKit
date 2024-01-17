@@ -503,7 +503,7 @@ button {
         width: 43%;
     }
     .info_boxes {
-        height: 150px;
+        height: 200px;
         width: 100%;
     }
     
@@ -532,6 +532,10 @@ button {
     .box :last-child {
         margin-top: 10px;
         font-size: 13px;
+    }
+    .info_boxes {
+        height: 150px;
+        width: 100%;
     }
 
 }
