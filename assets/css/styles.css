@@ -320,26 +320,16 @@ button {
 
     .content_top img {
         content: url('/assets/img/iphone_600px.png');
-        width: 648px; 
+        max-width: 100%;
         margin-top:20px;
         left: 0; 
         transition: left 0.8s ease; 
 
-        @media screen and (max-width: 700px) {
-            left: -10%; 
-        }
-        @media screen and (max-width: 600px) {
-            left: -30%; 
-        }
-        @media screen and (max-width: 500px) {
-            left: -45%; 
-        }
-        @media screen and (max-width: 400px) {
-            left: -45%; 
-        }  
-        @media screen and (max-width: 300px) {
-            left: -65%; 
-        }  
+        
+    }
+    .image_container{
+        width: 648px; 
+
     }
 
 
